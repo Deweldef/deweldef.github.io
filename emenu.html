@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+ <div>
+  <img  src="logo.png">
+</div> 
+  <center>
+    <div class="Menu">
+       <center>
+        <a href="ehome.html" class="selected">HOME</a> |
+        <a href="eonas.html">ABOUT US</a> |
+        <a href="emenu.html">MENU</a>|
+        <a href="https://www.blue-fjord.cz/cerstve-ryby">E-Shop</a>
+        
+       </center> 
+        <div class="dropdown">
+        <button >Language</button>
+        <div class="dropdown-content">
+          <a href="emenu.html">English</a>
+          <a href="menu.html">Česky</a>
+          <a href="fmenu.html">Français</a>
+          </div>
+    </div>
+</center>
+<br>
+<br>
+<center>
+    <div class="text">
+        We do NOT have a paper menu here, you order at the counter and we take care of everything
+<br>
+<br>
+<div class="w3-content w3-display-container" width="600" height="250">
+  <img class="mySlides" src="1.jpg" style="width: 500px">
+  <img class="mySlides" src="2.jpg" style="width: 500px;">
+  <img class="mySlides" src="3.jpg" style="width: 500px;">
+  <img class="mySlides" src="4.jpg" style="width: 500px;">
+  <img class="mySlides" src="pult.img" style="width: 500px;">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  
+
+  We weigh everything on a scale and make sure it is 100g.
+  We also have small aquariums, but they are on display, not for eating.
+  <br>
+  
+  If you want to make a reservation, you can write to me.    
+  <form action="menu.html">
+    <label for="fname">NAME:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">TIME:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="submit" href="menu.html">
+  </form> 
+
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+</head>
+<body>
+ <div>
+  <img  src="logo.png">
+</div> 
+  <center>
+    <div class="Menu">
+        <center>
+        <a href="index.html" >HOME</a> |
+        <a href="onas.html">O NÁS</a> |
+        <a href="menu.html">MENU</a>|
+        <a href="https://www.blue-fjord.cz/cerstve-ryby">E-Shop</a>
+       </center> 
+        <div class="dropdown">
+        <button >Language</button>
+        <div class="dropdown-content">
+          <a href="emenu.html">English</a>
+          <a href="menu.html">Česky</a>
+          <a href="fmenu.html">Français</a>
+          </div>
+    </div>
+</center>
+<br>
+<br>
+<center>
+    <div class="text">
+    U nas NE mame menu na papiru tady se obednava u pultu a o vsechno se postarame my
+
+<br>
+<br>
+
+
+
+<div class="w3-content w3-display-container" width="600" height="250">
+  <img class="mySlides" src="1.jpg" style="width: 500px">
+  <img class="mySlides" src="2.jpg" style="width: 500px;">
+  <img class="mySlides" src="3.jpg" style="width: 500px;">
+  <img class="mySlides" src="4.jpg" style="width: 500px;">
+  <img class="mySlides" src="pult.img" style="width: 500px;">
+  
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+  
+Všechno važíme na vaze a cenz dbaj na 100g.
+Také máme male akvarka ale ty jsou na display ne na jezení.
+<br>
+Jesli si chce udělat rezervaci můžete napsat jsem.
+<form action="menu.html">
+  <label for="fname">NAME:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">TIME:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="submit" href="menu.html">
+</form> 
+
+
+</div>
+</center>
+</body>
+</html>
